@@ -144,6 +144,8 @@ nav a:hover {
   padding: 2rem;
   text-align: center;
   background-color: #2a2a3b;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .about h2 {
