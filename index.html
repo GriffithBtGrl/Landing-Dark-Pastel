@@ -1,67 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dark Pastel site</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
     <header>
-    <a href="#" class="logo">Mi Marca</a>
-    <div class="burger" id="burger" aria-label="Menú" tabindex="0" role="button">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <nav id="nav" aria-label="Navegación principal">
-      <a href="#">Inicio</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#about-us">Sobre nosotros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Transforma tu presencia digital</h1>
-      <p>Diseño web a medida con estilo único. Minimalista, oscuro, retro-tech o pastel. Tú eliges.</p>
-    </div>
-    <!-- El slide se puede reemplazar por un video de YT -->
-
-    <div class="slider">
-      <button class="arrow left" id="prev">&#10094;</button> 
-      <div class="slides" id="slides">
-        <img src="./assets/img/images.jpg" alt="Slide 1">
-        <img src="./assets/img/rukawa.jpg" alt="Slide 2">
-        <img src="./assets/img/Bersek.png" alt="Slide 3">
+      <a href="#" class="logo">Mi Marca</a>
+      <div
+        class="burger"
+        id="burger"
+        aria-label="Menú"
+        tabindex="0"
+        role="button"
+      >
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-      <button class="arrow right" id="next">&#10095;</button>
-    </div>
-  </section>
+      <nav id="nav" aria-label="Navegación principal">
+        <a href="#">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#about-us">Sobre nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
 
-  <section class="about" id="about-us">
-    <h2>Sobre nosotros</h2>
-    <p>Somos un equipo creativo y apasionado por el diseño y la tecnología. Ayudamos a negocios a destacarse con soluciones visuales y funcionales que conectan con su audiencia.</p>
-  </section>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Transforma tu presencia digital</h1>
+        <p>
+          Diseño web a medida con estilo único. Minimalista, oscuro, retro-tech
+          o pastel. Tú eliges.
+        </p>
+      </div>
+      <!-- El slide se puede reemplazar por un video de YT -->
 
+      <div class="slider">
+        <button class="arrow left" id="prev">&#10094;</button>
+        <div class="slides" id="slides">
+          <img src="./assets/img/images.jpg" alt="Slide 1" />
+          <img src="./assets/img/rukawa.jpg" alt="Slide 2" />
+          <img src="./assets/img/Bersek.png" alt="Slide 3" />
+        </div>
+        <button class="arrow right" id="next">&#10095;</button>
+      </div>
+    </section>
 
-  <section id="contacto">
-    <form id="contact-form">
-      <input type="text" name="name" placeholder="Tu nombre" required />
-      <input type="email" name="email" placeholder="Tu correo electrónico" required />
-      <input type="text" name="title" placeholder="Asunto" required />
-      <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
-      <button type="submit">Enviar</button>
-      <div id="form-message" class="form-message"></div> 
+    <section class="services" id="servicios">
+      <h2>Servicios</h2>
+      <div class="services-list">
+        <div class="service-item">
+          <h3>Diseño Web</h3>
+          <p>
+            Creación de sitios web modernos, responsivos y adaptados a la
+            identidad de tu marca.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Desarrollo Frontend</h3>
+          <p>
+            Implementación de interfaces interactivas y funcionales usando
+            tecnologías actuales.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Consultoría Digital</h3>
+          <p>
+            Asesoría para potenciar tu presencia digital y optimizar tu
+            estrategia online.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    </form>
-  </section>
+    <section class="about" id="about-us">
+      <h2>Sobre nosotros</h2>
+      <p>
+        Somos un equipo creativo y apasionado por el diseño y la tecnología.
+        Ayudamos a negocios a destacarse con soluciones visuales y funcionales
+        que conectan con su audiencia.
+      </p>
+    </section>
 
-  <a class="whatsapp-button" href="https://wa.me/56978757949" target="_blank" title="Escríbenos por WhatsApp">📱</a>
+    <section id="contacto">
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Tu nombre" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Tu correo electrónico"
+          required
+        />
+        <input type="text" name="title" placeholder="Asunto" required />
+        <textarea
+          name="message"
+          placeholder="Tu mensaje"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">Enviar</button>
+        <div id="form-message" class="form-message"></div>
+      </form>
+    </section>
 
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script src="./assets/js/script.js"></script>
-</body>
+    <a
+      class="whatsapp-button"
+      href="https://wa.me/56978757949"
+      target="_blank"
+      title="Escríbenos por WhatsApp"
+      >📱</a
+    >
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>

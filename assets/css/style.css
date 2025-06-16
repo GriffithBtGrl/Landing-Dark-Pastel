@@ -151,6 +151,62 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
+/* --- SECCIÓM SERVICIOS--- */
+.services {
+  background: #23233a;
+  color: var(--text-color);
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+.services h2 {
+  color: var(--accent-light);
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background: #1e1e2f;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #0002;
+  padding: 2rem 1.5rem;
+  min-width: 220px;
+  max-width: 260px;
+  flex: 1 1 220px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  border: 1.5px solid var(--accent);
+}
+
+.service-item h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+.service-item p {
+  color: #d1c4e9;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.service-item:hover {
+  transform: translateY(-7px) scale(1.025);
+  box-shadow: 0 6px 24px #b388eb33, 0 1.5px 8px #0004;
+  border-color: var(--accent-light);
+}
+
 
 /* == FORMULARIO DE CONTACTO == */
 form {
@@ -276,6 +332,18 @@ form button {
   }
   .burger {
     display: flex;
+  }
+
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .service-item {
+    max-width: 86vw;
+    min-width: 0;
+    width: 97vw;
+    padding: 1.3rem 1rem;
   }
 }
 
